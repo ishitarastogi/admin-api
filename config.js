@@ -13,4 +13,5 @@ module.exports = {
   CH_KEY: process.env.CH_KEY,
   CH_PKEY: process.env.CH_PKEY,
   AL_Key: process.env.AL_Key,
+  ETHER_KEY: process.env.ETHER_KEY,
 };

@@ -13,7 +13,6 @@ const axios = require("axios");
 const eventSchema = require("./src/models/event");
 let port = config.port;
 let uriMongo = config.db_info;
-
 const eventRoute = require("./src/routes/eventsRoute");
 
 mongoose.connect(
@@ -62,6 +61,7 @@ cron.schedule("* * * * *", async () => {
           contractAddress,
         } = eve;
         const provider = ethers.getDefaultProvider();
+        let apiKey = config.ETHER_KEY;
 
         const latestBlock = await provider.getBlockNumber();
         const baseURL = `https://api.etherscan.io/api?module=logs&action=getLogs&fromBlock=${lastBlockNumber}&toBlock=${latestBlock}&address=${contractAddress}&topic0=${eventHash}&page=1&offset=1000&apikey=${apiKey}`;
