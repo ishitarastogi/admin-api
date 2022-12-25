@@ -13,6 +13,7 @@ This channel notifies you whenever any admin functions is invoked of a given con
 
 4. Subscrible to our channel to get notified whenever any admin function is invoked 
 
+<img width="1201" alt="Screenshot 2022-12-25 at 11 54 39 AM" src="https://user-images.githubusercontent.com/46647968/209458888-caf52cb2-b438-456c-8d6c-b9f04972324a.png">
 
 ## How Track events 🔎 can help you?
 
