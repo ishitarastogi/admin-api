@@ -1,17 +1,15 @@
-if (process.env.NODE_ENV) {
-  require("custom-env").env(process.env.NODE_ENV || "prod");
-} else {
-  process.env.NODE_ENV = "prod";
-  require("custom-env").env(process.env.NODE_ENV);
-}
+if(process.env.NODE_ENV){
+    require ('custom-env').env(process.env.NODE_ENV || 'prod');
+  }else{
+    process.env.NODE_ENV = 'prod';
+    require ('custom-env').env(process.env.NODE_ENV);
+  }
 
-module.exports = {
-  port: 8002,
-  db_info:
-    "mongodb+srv://thunderpi:--Earth123--@thunderpi.rmgof.mongodb.net/ishitaPC?retryWrites=true&w=majority",
-  RPC: "https://rpc-mumbai.maticvigil.com/",
-  PR_KEY: "d760dc1596fdf9791829852e6b5af30cac922ee0f1b320ff4f3ab49b1997446b",
-  CH_KEY: "d760dc1596fdf9791829852e6b5af30cac922ee0f1b320ff4f3ab49b1997446b",
-  CH_PKEY: "0x9147BDf9aaca01B5f2680633e254a9776ecB10e5",
-  ETH_RPC: process.env.ETH_RPC,
-};
+  module.exports = {
+    port: process.env.PORT,
+    db_info:process.env.DB_URL,
+    RPC: "https://rpc-mumbai.maticvigil.com/",
+    PR_KEY: process.env.PR_KEY,
+    CH_KEY: process.env.CH_KEY,
+    CH_PKEY: process.env.CH_PKEY,
+  };
