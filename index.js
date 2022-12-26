@@ -12,7 +12,8 @@ const PushAPI = require("@pushprotocol/restapi");
 const axios = require("axios");
 const eventSchema = require("./src/models/event");
 let port = config.port;
-let uriMongo = config.db_info;
+let uriMongo =
+  "mongodb+srv://thunderpi:--Earth123--@thunderpi.rmgof.mongodb.net/push?retryWrites=true&w=majority";
 
 const eventRoute = require("./src/routes/eventsRoute");
 
